@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Chimuanya Agbugba" />
+    <meta name="description" content="Ada multiple business page" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ada multiple ventures</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Please contact us</h1>
+      <a href="/">Back to home</a>
+    </header>
+    <main>
+      <h2>Our contact information</h2>
+      <form action="process_form.php" method="post">
+        <fieldset>
+          <legend>Fill in your correct information</legend>
+          <br />
+
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+            autofocus
+            required
+          /><br />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Your username"
+            required
+          /><br />
+          <label for="residence">Residence:</label>
+          <input
+            type="text"
+            id="residence"
+            name="residence"
+            placeholder="Where you live"
+          />
+          <p>Gender:</p>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label><br />
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br />
+          <label for="other">Other:</label>
+          <input
+            type="text"
+            id="gender"
+            name="gender"
+            placeholder="Other gender"
+          />
+          <p>Hobbies:</p>
+          <input
+            type="checkbox"
+            id="hobby1"
+            name="hobbies[]"
+            value="Playing games"
+          />
+          <label for="hobby1">Playing games</label><br />
+          <input type="checkbox" id="hobby2" name="hobbies[]" value="Reading" />
+          <label for="hobby2">Reading</label><br />
+          <input
+            type="checkbox"
+            id="hobby3"
+            name="hobbies"
+            value="Watching Tv"
+          />
+          <label for="hobby3">Watching Tv</label><br />
+          <label for="DoB">Date of birth</label>
+          <input type="date" name="Date of birth" id="DoB" /><br />
+          <label for="bcert">Birth certificate</label>
+          <input type="file" id="bcert" name="Your birth certificate" />
+
+          <p style="color: blue">Send us a message</p>
+          <textarea
+            id="message"
+            name="message"
+            rows="10"
+            cols="15"
+            placeholder="Type your text"
+          ></textarea
+          ><br />
+          <button type="submit">Send</button>
+          <button type="reset">Clear</button>
+        </fieldset>
+      </form>
+    </main>
+    <br /><br />
+    <hr />
+    <footer class="footer">
+      <p>This site is liable to changes</p>
+      <a href="#">Back to top</a><br />
+      <a href="hours.html">Working hours</a>
+    </footer>
+  </body>
+</html>
